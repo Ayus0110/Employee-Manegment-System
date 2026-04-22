@@ -1,0 +1,381 @@
+.manage-user-shell {
+    display: grid;
+    gap: 24px;
+}
+
+.manage-user-hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+    padding: 28px 30px;
+    border-radius: 24px;
+    background:
+        radial-gradient(circle at top right, rgba(59, 130, 246, 0.18), transparent 32%),
+        linear-gradient(135deg, #17263d 0%, #213758 55%, #294a77 100%);
+    color: #f8fbff;
+    box-shadow: 0 18px 40px rgba(23, 38, 61, 0.18);
+}
+
+.eyebrow,
+.panel-kicker,
+.metric-label,
+.hero-chip-label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 0.78rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    opacity: 0.78;
+}
+
+.manage-user-hero h3 {
+    margin: 0 0 10px;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.manage-user-hero p:last-child {
+    margin: 0;
+    max-width: 650px;
+    color: rgba(248, 251, 255, 0.84);
+}
+
+.hero-chip {
+    min-width: 220px;
+    padding: 18px 20px;
+    border-radius: 18px;
+    background: rgba(255, 255, 255, 0.12);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.hero-chip strong {
+    font-size: 1.4rem;
+}
+
+.manage-alert {
+    margin: 0;
+    border-radius: 16px;
+}
+
+.manage-metrics {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px;
+}
+
+.metric-card,
+.panel-card,
+.custom-modal {
+    background: #fff;
+    border: 1px solid #e8edf5;
+    border-radius: 22px;
+    box-shadow: 0 12px 32px rgba(15, 23, 42, 0.06);
+}
+
+.metric-card {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 24px;
+}
+
+.metric-card h4 {
+    margin: 0;
+    font-size: 1.9rem;
+    color: #16243a;
+}
+
+.metric-icon {
+    width: 54px;
+    height: 54px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 16px;
+    background: linear-gradient(135deg, #dbeafe, #eff6ff);
+    color: #1d4ed8;
+    font-size: 1.4rem;
+}
+
+.panel-card {
+    padding: 26px;
+}
+
+.table-toolbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 18px;
+    margin-bottom: 18px;
+}
+
+.toolbar-actions {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.table-search {
+    position: relative;
+    min-width: 300px;
+}
+
+.table-search i {
+    position: absolute;
+    top: 50%;
+    left: 14px;
+    transform: translateY(-50%);
+    color: #64748b;
+}
+
+.table-search .form-control {
+    padding-left: 42px;
+    min-height: 48px;
+    border-radius: 14px;
+    border-color: #d6dfeb;
+}
+
+.action-top-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    min-height: 46px;
+    padding: 10px 18px;
+    border-radius: 14px;
+    font-weight: 600;
+}
+
+.export-btn {
+    background: #16a34a;
+    color: #fff;
+}
+
+.export-btn:hover {
+    color: #fff;
+    background: #15803d;
+}
+
+.import-btn {
+    background: #fff;
+    color: #15803d;
+    border: 1px solid #16a34a;
+}
+
+.add-btn {
+    background: #2563eb;
+    color: #fff;
+}
+
+.add-btn:hover {
+    color: #fff;
+    background: #1d4ed8;
+}
+
+.manage-user-table thead th {
+    padding: 16px 14px;
+    background: #1f2937;
+    color: #fff;
+    border: 0;
+    font-weight: 600;
+}
+
+.manage-user-table tbody td {
+    padding: 18px 14px;
+    color: #334155;
+    border-color: #edf2f7;
+}
+
+.manage-user-table tbody tr:hover {
+    background: #f8fbff;
+}
+
+.user-name-cell {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.user-name-cell strong,
+.user-name-cell small {
+    display: block;
+}
+
+.user-name-cell small {
+    color: #64748b;
+}
+
+.user-avatar {
+    width: 42px;
+    height: 42px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 14px;
+    background: linear-gradient(135deg, #e0ecff, #dbeafe);
+    color: #1d4ed8;
+    font-weight: 700;
+}
+
+.role-badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6px 12px;
+    border-radius: 999px;
+    font-weight: 700;
+}
+
+.role-admin {
+    background: #fef3c7;
+    color: #b45309;
+}
+
+.role-hr {
+    background: #ede9fe;
+    color: #6d28d9;
+}
+
+.role-manager {
+    background: #dbeafe;
+    color: #1d4ed8;
+}
+
+.role-employee {
+    background: #dcfce7;
+    color: #15803d;
+}
+
+.table-actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.action-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    border-radius: 12px;
+    padding: 9px 14px;
+    font-weight: 600;
+    border: 1px solid transparent;
+}
+
+.edit-btn {
+    background: #fef3c7;
+    color: #b45309;
+}
+
+.delete-btn {
+    background: #fff1f2;
+    color: #dc2626;
+}
+
+.empty-state {
+    padding: 36px 12px;
+    text-align: center;
+    color: #64748b;
+}
+
+.empty-state i {
+    font-size: 2rem;
+    color: #2563eb;
+}
+
+.empty-state h5 {
+    margin: 14px 0 8px;
+    color: #16243a;
+}
+
+.custom-modal {
+    border-radius: 24px;
+}
+
+.modal-control {
+    min-height: 52px;
+    border-radius: 14px;
+    border-color: #d6dfeb;
+}
+
+.modal-control:focus,
+.form-control:focus,
+.form-select:focus {
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 0.22rem rgba(59, 130, 246, 0.14);
+}
+
+.modal-alert {
+    border-radius: 16px;
+}
+
+.modal-submit-btn {
+    min-height: 46px;
+    padding: 10px 18px;
+    border-radius: 14px;
+    color: #fff;
+    font-weight: 600;
+}
+
+.import-btn-solid {
+    background: #16a34a;
+}
+
+.add-btn-solid {
+    background: #2563eb;
+}
+
+.edit-btn-solid {
+    background: #1d4ed8;
+}
+
+@media (max-width: 1100px) {
+    .manage-metrics {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .manage-user-hero,
+    .table-toolbar {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .table-search {
+        min-width: 100%;
+    }
+
+    .panel-card,
+    .metric-card {
+        padding: 20px;
+    }
+
+    .hero-chip {
+        min-width: 0;
+        width: 100%;
+    }
+
+    .table-actions,
+    .toolbar-actions {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .manage-user-shell {
+        gap: 18px;
+    }
+
+    .manage-user-hero h3 {
+        font-size: 1.55rem;
+    }
+
+    .action-btn,
+    .action-top-btn {
+        width: 100%;
+        justify-content: center;
+    }
+}

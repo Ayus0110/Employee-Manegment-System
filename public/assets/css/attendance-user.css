@@ -1,0 +1,275 @@
+.attendance-user-shell {
+    display: grid;
+    gap: 24px;
+}
+
+.attendance-user-hero {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+    padding: 30px;
+    border-radius: 26px;
+    background:
+        radial-gradient(circle at top right, rgba(59, 130, 246, 0.18), transparent 34%),
+        linear-gradient(135deg, #17263d 0%, #213758 55%, #294a77 100%);
+    color: #f8fbff;
+    box-shadow: 0 22px 44px rgba(23, 38, 61, 0.16);
+}
+
+.hero-copy {
+    max-width: 720px;
+}
+
+.eyebrow,
+.panel-kicker,
+.metric-label,
+.hero-chip-label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 0.78rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    opacity: 0.8;
+}
+
+.attendance-user-hero h3 {
+    margin: 0 0 10px;
+    font-size: 2.05rem;
+    font-weight: 700;
+}
+
+.attendance-user-hero p:last-child {
+    margin: 0;
+    color: rgba(248, 251, 255, 0.84);
+    line-height: 1.7;
+}
+
+.hero-side {
+    display: grid;
+    gap: 14px;
+    min-width: 250px;
+}
+
+.hero-chip,
+.panel-card,
+.metric-card {
+    background: #fff;
+    border: 1px solid #e8edf5;
+    border-radius: 24px;
+    box-shadow: 0 12px 32px rgba(15, 23, 42, 0.06);
+}
+
+.hero-chip {
+    padding: 20px 22px;
+    background: rgba(255, 255, 255, 0.12);
+    border: 1px solid rgba(255, 255, 255, 0.16);
+    color: #fff;
+}
+
+.hero-chip strong {
+    display: block;
+    font-size: 1.35rem;
+    margin-bottom: 6px;
+}
+
+.hero-chip small {
+    color: rgba(248, 251, 255, 0.78);
+}
+
+.hero-action-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    min-height: 52px;
+    padding: 12px 18px;
+    border-radius: 16px;
+    background: #fff;
+    color: #1d4ed8;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.hero-action-link:hover {
+    color: #1e40af;
+    background: #eff6ff;
+}
+
+.attendance-stats-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px;
+}
+
+.metric-card {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 24px;
+}
+
+.metric-icon {
+    width: 56px;
+    height: 56px;
+    border-radius: 18px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    font-size: 1.35rem;
+}
+
+.metric-total .metric-icon {
+    background: linear-gradient(135deg, #dbeafe, #eff6ff);
+    color: #1d4ed8;
+}
+
+.metric-present .metric-icon {
+    background: #dcfce7;
+    color: #15803d;
+}
+
+.metric-absent .metric-icon {
+    background: #fee2e2;
+    color: #dc2626;
+}
+
+.metric-card h4 {
+    margin: 0;
+    font-size: 1.95rem;
+    color: #16243a;
+}
+
+.metric-card p {
+    margin: 6px 0 0;
+    color: #64748b;
+    font-size: 0.92rem;
+}
+
+.panel-card {
+    padding: 28px;
+}
+
+.panel-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 16px;
+    margin-bottom: 20px;
+}
+
+.panel-head h4 {
+    margin: 0;
+    font-size: 1.55rem;
+    color: #16243a;
+}
+
+.panel-note {
+    max-width: 320px;
+    color: #64748b;
+    font-size: 0.95rem;
+}
+
+.attendance-user-table thead th {
+    padding: 16px 14px;
+    background: #1f2937;
+    color: #fff;
+    border: 0;
+    font-weight: 600;
+}
+
+.attendance-user-table tbody td {
+    padding: 16px 14px;
+    color: #334155;
+    border-color: #edf2f7;
+}
+
+.attendance-user-table tbody tr:hover {
+    background: #f8fbff;
+}
+
+.status-badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 7px 12px;
+    border-radius: 999px;
+    font-weight: 700;
+}
+
+.status-present {
+    background: #dcfce7;
+    color: #15803d;
+}
+
+.status-absent {
+    background: #fee2e2;
+    color: #dc2626;
+}
+
+.empty-state {
+    padding: 40px 14px;
+    text-align: center;
+    color: #64748b;
+}
+
+.empty-state i {
+    font-size: 2.2rem;
+    color: #2563eb;
+}
+
+.empty-state h5 {
+    margin: 14px 0 8px;
+    color: #16243a;
+}
+
+@media (max-width: 1100px) {
+    .attendance-stats-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .attendance-user-hero,
+    .panel-head {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .attendance-user-hero {
+        padding: 22px;
+    }
+
+    .hero-side,
+    .hero-chip {
+        min-width: 0;
+        width: 100%;
+    }
+
+    .panel-card,
+    .metric-card {
+        padding: 20px;
+    }
+
+    .hero-action-link {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .attendance-user-shell {
+        gap: 18px;
+    }
+
+    .attendance-user-hero h3 {
+        font-size: 1.55rem;
+    }
+
+    .metric-card h4 {
+        font-size: 1.45rem;
+    }
+
+    .panel-head h4 {
+        font-size: 1.2rem;
+    }
+}
