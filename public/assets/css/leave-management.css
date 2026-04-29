@@ -522,3 +522,89 @@
         font-size: 1.2rem;
     }
 }
+
+@media (max-width: 425px) {
+    .leave-hero {
+        padding: 16px;
+        border-radius: 18px;
+        gap: 16px;
+    }
+
+    .leave-hero h3 {
+        font-size: 1.28rem;
+    }
+
+    .hero-chip,
+    .metric-card,
+    .panel-card {
+        padding: 16px;
+        border-radius: 18px;
+    }
+
+    .metric-card h4 {
+        font-size: 1.35rem;
+    }
+
+    .metric-icon {
+        width: 46px;
+        height: 46px;
+        border-radius: 14px;
+        font-size: 1.15rem;
+    }
+
+    .panel-head h4 {
+        font-size: 1.18rem;
+    }
+
+    .panel-note,
+    .hero-copy p:last-child,
+    .insight-item p,
+    .balance-note {
+        font-size: 0.84rem;
+    }
+
+    .form-control,
+    .form-select {
+        min-height: 50px;
+        font-size: 0.92rem;
+    }
+
+    .textarea-control {
+        min-height: 110px;
+    }
+
+    .leave-table thead th,
+    .leave-table tbody td {
+        padding: 12px 10px;
+        font-size: 0.88rem;
+        white-space: nowrap;
+    }
+}
+
+@media (max-width: 375px) {
+    .leave-hero h3,
+    .panel-head h4 {
+        font-size: 1.08rem;
+    }
+
+    .hero-chip,
+    .metric-card,
+    .panel-card {
+        padding: 14px;
+    }
+
+    .leave-table thead th,
+    .leave-table tbody td {
+        padding: 10px 8px;
+        font-size: 0.84rem;
+    }
+}
+
+@media (max-width: 320px) {
+    .leave-hero,
+    .hero-chip,
+    .metric-card,
+    .panel-card {
+        padding: 12px;
+    }
+}

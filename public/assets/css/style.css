@@ -492,3 +492,75 @@ button:hover {
         align-items: flex-start;
     }
 }
+
+@media (max-width: 425px) {
+    .landing-header,
+    .landing-shell {
+        padding-left: 18px;
+        padding-right: 18px;
+    }
+
+    .hero-card,
+    .feature-card,
+    .auth-card,
+    .slip-box {
+        padding: 18px;
+        border-radius: 20px;
+    }
+
+    .hero-copy h1 {
+        font-size: 1.9rem;
+    }
+
+    .hero-copy p,
+    .switch,
+    .options {
+        font-size: 0.92rem;
+    }
+
+    .landing-brand {
+        font-size: 1.4rem;
+    }
+}
+
+@media (max-width: 375px) {
+    .landing-header,
+    .landing-shell {
+        padding-left: 14px;
+        padding-right: 14px;
+    }
+
+    .hero-copy h1 {
+        font-size: 1.7rem;
+    }
+
+    .hero-card,
+    .feature-card,
+    .auth-card,
+    .slip-box {
+        padding: 16px;
+    }
+
+    .options {
+        gap: 8px;
+    }
+}
+
+@media (max-width: 320px) {
+    .landing-header,
+    .landing-shell {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .hero-copy h1 {
+        font-size: 1.5rem;
+    }
+
+    .hero-card,
+    .feature-card,
+    .auth-card,
+    .slip-box {
+        padding: 14px;
+    }
+}

@@ -725,3 +725,236 @@ button {
         min-width: 560px;
     }
 }
+
+@media (max-width: 425px) {
+    .main-content {
+        padding: 8px;
+    }
+
+    .topbar,
+    .content-box {
+        padding: 12px;
+        border-radius: 16px;
+    }
+
+    .topbar-main {
+        gap: 10px;
+        width: 100%;
+    }
+
+    .topbar h2 {
+        font-size: 1.15rem;
+    }
+
+    .mobile-menu-btn,
+    .notification-toggle {
+        width: 42px;
+        height: 42px;
+    }
+
+    .profile-toggle {
+        gap: 10px;
+        padding: 7px 12px 7px 8px;
+    }
+
+    .profile-avatar {
+        width: 38px;
+        height: 38px;
+        font-size: 0.85rem;
+    }
+
+    .profile-text strong {
+        font-size: 0.88rem;
+    }
+
+    .profile-text span {
+        font-size: 0.74rem;
+    }
+
+    .profile-menu,
+    .notification-menu {
+        width: calc(100vw - 20px);
+        max-width: calc(100vw - 20px);
+        right: -6px;
+        border-radius: 16px;
+    }
+
+    .profile-card-head,
+    .notification-head {
+        padding-bottom: 12px;
+        margin-bottom: 12px;
+    }
+
+    .profile-avatar-lg {
+        width: 60px;
+        height: 60px;
+        font-size: 1.15rem;
+    }
+
+    .dashboard-hero,
+    .manage-user-hero,
+    .leave-hero,
+    .salary-hero,
+    .settings-hero,
+    .attendance-hero,
+    .tasks-hero,
+    .record-panel {
+        padding: 16px !important;
+        border-radius: 18px !important;
+    }
+
+    .hero-copy h3,
+    .panel-head h4 {
+        font-size: 1.3rem !important;
+    }
+
+    .hero-copy p,
+    .panel-subtitle,
+    .panel-note,
+    .toolbar-badge,
+    .hero-chip-label,
+    .metric-label {
+        font-size: 0.84rem !important;
+    }
+
+    .hero-chip strong,
+    .metric-card h4 {
+        font-size: 1.4rem !important;
+    }
+
+    .metric-card,
+    .panel-card,
+    .custom-modal {
+        padding: 16px !important;
+        border-radius: 18px !important;
+    }
+
+    .table-search,
+    .toolbar-actions,
+    .table-actions,
+    .action-group,
+    .profile-actions {
+        width: 100%;
+    }
+
+    .table-search input,
+    .table-search .form-control,
+    .form-control,
+    .form-select,
+    .btn,
+    button {
+        font-size: 0.95rem;
+    }
+
+    .content-box .table thead th,
+    .content-box .table tbody td {
+        padding: 12px 10px;
+        font-size: 0.9rem;
+        white-space: nowrap;
+    }
+
+    .table-responsive table {
+        min-width: 500px;
+    }
+
+    .pagination-shell .page-link {
+        min-width: 38px;
+        height: 38px;
+        font-size: 0.88rem;
+    }
+}
+
+@media (max-width: 375px) {
+    .topbar,
+    .content-box {
+        padding: 10px;
+    }
+
+    .topbar h2 {
+        font-size: 1.05rem;
+    }
+
+    .sidebar a,
+    .sidebar button {
+        padding: 12px 16px;
+        font-size: 14px;
+    }
+
+    .hero-copy h3,
+    .panel-head h4 {
+        font-size: 1.18rem !important;
+    }
+
+    .hero-chip strong,
+    .metric-card h4 {
+        font-size: 1.25rem !important;
+    }
+
+    .metric-card {
+        gap: 12px;
+    }
+
+    .metric-icon {
+        width: 46px !important;
+        height: 46px !important;
+        font-size: 1.1rem !important;
+    }
+
+    .table-responsive table {
+        min-width: 460px;
+    }
+
+    .content-box .table thead th,
+    .content-box .table tbody td {
+        padding: 10px 8px;
+        font-size: 0.86rem;
+    }
+}
+
+@media (max-width: 320px) {
+    .main-content {
+        padding: 6px;
+    }
+
+    .topbar,
+    .content-box {
+        padding: 9px;
+        border-radius: 14px;
+    }
+
+    .topbar h2 {
+        font-size: 0.98rem;
+    }
+
+    .mobile-menu-btn,
+    .notification-toggle {
+        width: 40px;
+        height: 40px;
+    }
+
+    .profile-toggle {
+        padding: 6px 10px 6px 7px;
+    }
+
+    .profile-text strong {
+        font-size: 0.82rem;
+    }
+
+    .profile-text span {
+        font-size: 0.7rem;
+    }
+
+    .hero-copy h3,
+    .panel-head h4 {
+        font-size: 1.08rem !important;
+    }
+
+    .table-responsive table {
+        min-width: 430px;
+    }
+
+    .pagination-shell .page-link {
+        min-width: 34px;
+        height: 34px;
+    }
+}

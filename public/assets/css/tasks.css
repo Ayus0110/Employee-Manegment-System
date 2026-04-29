@@ -386,3 +386,95 @@
         min-width: 100%;
     }
 }
+
+@media (max-width: 425px) {
+    .tasks-hero {
+        padding: 16px;
+        border-radius: 18px;
+        gap: 16px;
+    }
+
+    .tasks-hero h3 {
+        font-size: 1.28rem;
+    }
+
+    .hero-chip,
+    .metric-card,
+    .panel-card,
+    .task-modal-card {
+        padding: 16px;
+        border-radius: 18px;
+    }
+
+    .metric-card h4 {
+        font-size: 1.35rem;
+    }
+
+    .metric-icon {
+        width: 46px;
+        height: 46px;
+        border-radius: 14px;
+        font-size: 1.12rem;
+    }
+
+    .panel-head h4 {
+        font-size: 1.18rem;
+    }
+
+    .panel-note,
+    .tasks-hero p:last-child,
+    .metric-card p {
+        font-size: 0.84rem;
+    }
+
+    .form-control,
+    .form-select {
+        min-height: 50px;
+        font-size: 0.92rem;
+    }
+
+    .textarea-control {
+        min-height: 110px;
+    }
+
+    .task-table thead th,
+    .task-table tbody td {
+        padding: 12px 10px;
+        font-size: 0.88rem;
+        white-space: nowrap;
+    }
+
+    .task-modal {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 375px) {
+    .tasks-hero h3,
+    .panel-head h4 {
+        font-size: 1.08rem;
+    }
+
+    .hero-chip,
+    .metric-card,
+    .panel-card,
+    .task-modal-card {
+        padding: 14px;
+    }
+
+    .task-table thead th,
+    .task-table tbody td {
+        padding: 10px 8px;
+        font-size: 0.84rem;
+    }
+}
+
+@media (max-width: 320px) {
+    .tasks-hero,
+    .hero-chip,
+    .metric-card,
+    .panel-card,
+    .task-modal-card {
+        padding: 12px;
+    }
+}
